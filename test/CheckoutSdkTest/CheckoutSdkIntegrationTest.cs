@@ -39,6 +39,8 @@ namespace Checkout
                 ex.Message.ShouldBe("The API response status code (508) does not indicate success.");
             }
         }
+        
+        // Todo add a test where the httpclient is provided
 
         private class TestingClientFactory : IHttpClientFactory
         {
